@@ -19,7 +19,7 @@
       <?php echo date("Y"); ?>. All rights reserved.</p>
 	</div>
 	<div class="topnav">
-  <a class="active" href="#home"><img src="researchook.jpg" width="120" height="20"></a>
+  <a class="active" href="#home"><img src="Ellipse 2.svg" width="120" height="50"><img src="researchook.jpg" width="130" height="40"></a>
   <div class="topnav-right">
     <a href="#aboutus">About Us</a>
     <a href="#conferences">Conferences</a>
@@ -39,7 +39,7 @@
         <div class="button-box">
             <div id="btn"></div>
             <button type="button" class="toggle-button" onclick="login()">LOG IN</button>
-            <button type="button" class="toggle-button" onclick="register()">REGISTER</button>
+            <button type="button" class="toggle-button" onclick="signup()">SIGN UP</button>
             </div>
              <form id="login" class="input-group">
                 <input type="text" class="input-field" placeholder="User ID" required>
@@ -47,12 +47,12 @@
                 <input type="checkbox" class="checkbox"><span>Remember password</span>
                 <button type="submit" class="submit-btn">Log in</button>
              </form>
-             <form id="register" class="input-group">
+             <form id="signup" class="input-group">
                 <input type="text" class="input-field" placeholder="User ID" required>
                 <input type="email" class="input-field" placeholder="Email ID" required>
                 <input type="text" class="input-field" placeholder="Enter password" required>
                 <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
+                <button type="submit" class="submit-btn">Sign up</button>
              </form>
     
         </div>
@@ -61,10 +61,10 @@
 	</div>
     <script>
         var x= document.getElementById("login");
-        var y= document.getElementById("register");
+        var y= document.getElementById("signup");
         var z= document.getElementById("btn");
 
-        function register(){
+        function signup(){
             x.style.left="-400px";
             y.style.left="50px";
             z.style.left="110px";
