@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<link rel="stylesheet" href="indexstyles1.css">
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home"><img src="researchook.jpg" height="24"></a>
+  <div class="topnav-right">
+    <a href="#aboutus">About Us</a>
+    <a href="#conferences">Conferences</a>
+    <a href="#journal">Journals</a>
+    <a href="Submit.html">Submit</a>
+    <a href="contact us.html">Contact Us</a>
+  </div>
+</div>
+</div>
+<section class="carousel" aria-label="carousel" Tabindex="0">
+  <a class="carousel__skip-link" href="#skip-link">Skip the Carousel</a>
+  <div class="slides">
+    <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0"><h1>ORCID ID</h1><p>You can create an ORCID ID and also signup and login to our system.</p></div>
+    <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0"><h1>VIEW REPUTED JOURNALS</h1><p>Get to know about the most reputed journals and conferences and submit your research papers on reliable sites</p></div>
+    <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0"><h1>VIEW IMPACT FACTOR AND CITATION NUMBER</h1><p>You can view impact factor of various journals also find the citation number of your research papers</p></div>
+    <div class="slides-item slide-4" id="slide-4" aria-label="slide 4 of 5" tabindex="0"><h1>VALIDATE JOURNALS</h1><p>Know if the journal you are interested in is an indexed journal ,validated from scopus , web of science,etc.</p></div>
+    <div class="slides-item slide-5" id="slide-5" aria-label="slide 5 of 5" tabindex="0"><h1>JOURNAL SUBMISSION</h1><p>Having difficulty in submitting journals?Not sure about how and where to submit papers?Then,get familiar with all necessary details before submitting papers through our site.</p1></div>       
+  </div>
+  <div class="carousel__nav">
+    <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1"></a>
+    <a class="slider-nav" href="#slide-2" aria-label="Go to slide 2"></a>
+    <a class="slider-nav" href="#slide-3" aria-label="Go to slide 3"></a>
+    <a class="slider-nav" href="#slide-4" aria-label="Go to slide 4"></a>
+    <a class="slider-nav" href="#slide-5" aria-label="Go to slide 5"></a>
+  </div>
+  <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
+</section>
+</div>
+<div class = "info">
+		<h1>BUILT FOR RESEARCHERS</h1>
+		<p>A platform developed for newbies to boost up their interest in the field of research.<br>
+		  A one stop destination that provides solution to each and every problem faced by young researchers.</p>
+		
+	</div>
+<div class="navbar">
+  	<a href="#"><img src="insta.jpeg" width="30" height="30"></a>
+ 	 <a href="#"><img src="fb.jpeg" width="30" height="30"></a>
+ 	 <a href="#"><img src="twitter.jpeg" width="30" height="30"></a>
+	 <p>Copyright &copy; 2022-
+      <?php echo date("Y"); ?>. All rights reserved.</p>
+	</div>
+<div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-button" onclick="login()">LOG IN</button>
+            <button type="button" class="toggle-button" onclick="signup()">SIGN UP</button>
+            </div>
+             <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="text" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="checkbox"><span>Remember password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+             </form>
+             <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="text" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Sign up</button>
+             </form>
+    
+        </div>
+        
+
+	</div>
+    <script>
+        var x= document.getElementById("login");
+        var y= document.getElementById("signup");
+        var z= document.getElementById("btn");
+
+        function signup(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+</html>
