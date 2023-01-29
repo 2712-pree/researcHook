@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(220, 218, 218);
+}
+.topnav {
+  overflow: hidden;
+  background: linear-gradient(to right, #f3ce8f, #ffb6c1);
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 13px 16px;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ddd;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+#head {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 150px;
+  height: 280px;
+}
+
+#head::before {
+  content: "";
+  background: url("about-us.webp") no-repeat center center/cover;
+  position: absolute;
+  height: 300px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#head .head1 {
+  padding: 45px;
+}
+#head h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.h-primary {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#banner {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+}
+
+#banner:hover {
+  transition: 2s;
+  transform: scale(1.5);
+}
+
+#mission h2,
+#vision h2 {
+  text-align: center;
+  margin-left: 24px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+#Mission,
+#Vision {
+  font-size: 1.5em;
+  font-family: "Dosis", sans-serif;
+}
+#mission {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0.5em;
+  margin-left: 12em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 1.5em;
+  box-shadow: 0 25px 30px rgb(0 0 0 / 55%);
+}
+
+#mission:hover,
+#vision:hover {
+  transform: scale(1.2);
+  border-radius: 3.5em;
+  background-color: rgb(62, 135, 188);
+  transition: 1.5s;
+  color: white;
+}
+
+#vision {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 4em;
+  padding: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 1.5em;
+  box-shadow: 0 25px 30px rgb(0 0 0 / 55%);
+}
+ul {
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  font-size: 1.25em;
+}
+#bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+#bottom ul li {
+  display: flex;
+  border: 0.2em solid black;
+  display: inline-flex;
+  padding: 1em;
+  justify-content: space-around;
+  margin-left: 5em;
+  margin-right: 7em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  box-shadow: 0 30px 3-px rgb(0 0 0 / 55%);
+}
+
+#bottom ul li:hover {
+  border-radius: 3.5em;
+  transform: scale(1.2);
+  background-color: rgb(251, 159, 126);
+  transition: 1s;
+}
+
+.navbar {
+  overflow: hidden;
+  background: linear-gradient(to right, #f3ce8f, #ffb6c1);
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #301934;
+  color: white;
+}
+.navbar p {
+  text-align: center;
+}
