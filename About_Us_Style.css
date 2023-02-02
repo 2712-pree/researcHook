@@ -10,6 +10,11 @@ body {
 .topnav {
   overflow: hidden;
   background: linear-gradient(to right, #f3ce8f, #ffb6c1);
+   height: 4em;
+}
+
+.topnav img {
+  height: 4em;
 }
 
 .topnav a {
