@@ -4,40 +4,61 @@
   margin: 0px;
   padding: 0px;
 }
+
 body {
-  background-color: rgb(220, 218, 218);
-}
-.topnav {
-  overflow: hidden;
-  background: linear-gradient(to right, #f3ce8f, #ffb6c1);
-   height: 4em;
+  background-color: rgba(224, 234, 233);
 }
 
-.topnav img {
-  height: 4em;
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 40px;
+  font-family: "Playfair Display", serif;
+}
+.logo {
+  width: 130px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 3px;
 }
 
-.topnav a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 13px 16px;
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style-type: none;
+  padding: 0 20px;
+  padding-top: 20px;
+  position: relative;
+}
+#navbar li a {
   text-decoration: none;
-  font-size: 23px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+#navbar li a:hover {
+  color: #0928af;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #ddd;
-  color: white;
-}
-
-.topnav-right {
-  float: right;
+#navbar li a:hover::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background: #0928af;
+  position: absolute;
+  bottom: -2px;
+  left: 20px;
 }
 #head {
   display: flex;
@@ -73,9 +94,9 @@ body {
 
 #banner {
   font-weight: bold;
-  text-align: center;
+  text-align: -webkit-center;
   font-family: "Dancing Script", cursive;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #banner:hover {
@@ -92,7 +113,7 @@ body {
 }
 #Mission,
 #Vision {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-family: "Dosis", sans-serif;
 }
 #mission {
@@ -151,18 +172,20 @@ ul {
 #bottom ul li:hover {
   border-radius: 3.5em;
   transform: scale(1.2);
-  background-color: rgb(251, 159, 126);
+  background-color: rgb(62, 135, 188);
   transition: 1s;
+  color: whitesmoke;
 }
 
-.navbar {
+.footer {
   overflow: hidden;
-  background: linear-gradient(to right, #f3ce8f, #ffb6c1);
+  position: relative;
   bottom: 0;
+  background-color: #d1e4f0;
   width: 100%;
 }
 
-.navbar a {
+.footer a {
   float: right;
   display: block;
   color: #f2f2f2;
@@ -170,17 +193,67 @@ ul {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 10px;
 }
 
-.navbar a:hover {
+.footer a:hover {
   background: #f1f1f1;
   color: black;
 }
 
-.navbar a.active {
+.footer a.active {
   background-color: #301934;
   color: white;
 }
-.navbar p {
+.footer p {
   text-align: center;
+  padding: 15px;
+}
+
+#points {
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+}
+
+#points ul li {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em 0 0.5em 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  list-style-type: circle;
+  font-size: 1.25em;
+  font-family: "Dosis", sans-serif;
+}
+
+#pic1 {
+  height: 2em;
+  padding-right: 0.5em;
+}
+
+#pic2 {
+  height: 1em;
+  padding-right: 0.5em;
+}
+
+#pic3 {
+  height: 1.5em;
+  padding-right: 0.5em;
+}
+
+#pic1:hover {
+  height: 3em;
+}
+
+#pic2:hover {
+  height: 2em;
+}
+
+#pic3:hover {
+  height: 3em;
 }
