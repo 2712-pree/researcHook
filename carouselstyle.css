@@ -1,0 +1,26 @@
+.carousel-item {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/*Heading */
+.heading {
+ position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+  font-weight: bold;
+  color:black;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+color:black;
+}
